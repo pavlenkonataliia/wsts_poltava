@@ -1,7 +1,7 @@
 .ba-container-masters{
 	padding-left: 20px;
 	padding-right: 20px;
-	max-width: 1128px;
+	max-width: 1182px;
 	// margin-left: 275px;
 	margin: 0 auto;
 }
@@ -10,7 +10,7 @@
 	background: $background-color;
 }
 .ba-header-masters{
-	padding:18px 0;
+	padding: 0;
 }
 .ba-menu-masters{
 	padding-right: 80px;
@@ -25,7 +25,7 @@
 	}		
 }
 .ba-about{
-	padding: 0 80px 135px 58px;
+	padding: 0 80px 135px 113px;
 	position: relative;
 	.ba-button-submit{
 		margin-left: 0px;
@@ -40,7 +40,7 @@ h3{
 	font-weight: normal;
 	font-size: 19px;
 	line-height: 23px;
-	padding-bottom: 25px;
+	padding: 0 0 25px 4px;
 }
 .ba-master-info{
 	display: flex;
@@ -52,7 +52,7 @@ h3{
 		font-size: 14px;
 		line-height: 1.2;
 	}
-	img{
+	.inst{
 		padding: 4px 0 0 67px;
 		margin: 0;
 		display: block;
@@ -67,7 +67,7 @@ h3{
 .ba-photo{
 	position: absolute;
 	top: 120px;
-	left: 275px;
+	left: 330px;
 	// border: 4px solid #727378;	
 	// margin: 0;	
 	// display: block;
@@ -85,10 +85,21 @@ h3{
 
 .ba-masters-menu{
 	text-align: right;
-	padding: 50px 16px 0 0;
+	padding: 50px 8px 0 0;
 	li{
-		// padding-left: 32px;
-		list-style: none;		
+		padding-right: 28px;
+		list-style: none;
+		position: relative;
+		:after{
+			content: '';
+			position: absolute;
+			right: 0;
+			bottom: 22px;
+			width: 10px;
+			height: 2px;
+			background: $text-color;
+			z-index: 1;
+		}		
 	}
 
 	a{font-size: 14px;
@@ -102,7 +113,7 @@ h3{
 }
 .ba-masters-scrol{	
 	text-align: center;
-	padding-right: 105px;
+	padding-right: 50px;
 }
 
 .ba-gallery-border{
@@ -116,8 +127,8 @@ h3{
 
 .ba-gallery-1{
 	position: relative;
-	z-index: 1;
-	margin: 0 10px 144px 52px;
+	// z-index: 0;
+	margin: 0 0 144px 106px;
 	h3{
 		padding: 32px 0 26px 2px;
 	}
@@ -126,7 +137,7 @@ h3{
 	position: absolute;
 	top: 0;
 	right: 0;
-	z-index: 1;
+	z-index: 0;
 }
 .photo-1-2{
 	position: absolute;
@@ -138,12 +149,12 @@ h3{
 	position: absolute;
 	top: 345px;
 	right: 0;
-	z-index: 1;
+	z-index: 2;
 }
 .ba-gallery-2{
 	position: relative;
 	z-index: 0;
-	margin: 0 14px 0 24px;	
+	padding: 0 0 0 78px;	
 }
 .photo-1-4{
 	position: absolute;
@@ -161,7 +172,7 @@ h3{
 		position: absolute;
 		top: 333px;
 		right: 107px;
-		z-index: 0;
+		z-index: 1;
 	}	
 }
 .photo-1-5{
@@ -178,7 +189,14 @@ h3{
 }
 .ba-row-gallery{
 	position: relative;
-	margin-bottom: 60px;
+	margin-bottom: 30px;
+}
+.ba-masters-footer{
+	margin: 0 87px -36px 66px;
+	position: relative;
+	z-index: 1;
+	background-color: $background-color;
+	padding: 19px 15px 0;
 }
 
 
